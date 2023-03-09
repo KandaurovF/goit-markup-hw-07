@@ -1,0 +1,172 @@
+@media screen and (min-width: 1200px) {
+  .conteiner {
+    width: 1160px;
+  }
+
+  /* =============== HEADER ============ */
+
+  .page-header {
+    padding-bottom: 24px;
+  }
+
+  .logo {
+    margin-right: 76px;
+  }
+
+  .current::after {
+    bottom: -4px;
+  }
+
+  .contacts-list {
+    display: flex;
+  }
+
+  .contacts-item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .contacts-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  /* ================= HERO ================= */
+
+  .hero {
+    padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg@2x-min.jpg);
+    }
+  }
+
+  .hero-heading {
+    margin-bottom: 48px;
+  }
+
+  /* =================== FEATURES =================== */
+
+  .features {
+    padding: 120px 0;
+  }
+
+  .features-item {
+    width: calc((100% - 24px * 3) / 4);
+  }
+
+  .feature-icon {
+    display: revert;
+    width: 64px;
+    height: 64px;
+  }
+
+  .features-icon-conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 100px;
+    margin-bottom: 8px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+  }
+
+  .features .headings {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  /* =================== ABOUT ====================== */
+
+  .about {
+    display: revert;
+    padding-bottom: 120px;
+  }
+
+  .about-list {
+    display: flex;
+  }
+
+  .about-item {
+    width: 360px;
+    height: 300px;
+    border: 1px solid #e7e9fc;
+  }
+
+  .about-item:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  /* =================== OUR TEAM =================== */
+
+  .our-team {
+    padding: 120px 0;
+  }
+
+  .our-team > .conteiner {
+    max-width: 1160px;
+  }
+
+  .our-team-card {
+    width: calc((100% - 24px * 3) / 4);
+  }
+
+  /* =================== CUSTOMERS =================== */
+
+  .customers > .conteiner {
+    max-width: 1160px;
+  }
+
+  .customers {
+    padding: 120px 0;
+  }
+
+  /* =================== FOOTER =================== */
+
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer > .conteiner {
+    max-width: 1160px;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+
+  .footer-logo-conteiner {
+    margin-right: 120px;
+  }
+
+  .footer-form {
+    margin-left: auto;
+  }
+
+  /* =================== PORTFOLIO =================== */
+
+  .portfolio {
+    padding: 96px 0 120px 0;
+  }
+
+  .filters-list {
+    margin-bottom: 72px;
+  }
+
+  .portfolio-card {
+    width: calc((100% - 24px * 2) / 3);
+  }
+}

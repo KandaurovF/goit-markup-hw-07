@@ -16,7 +16,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles-mobile.css" />
+    <link rel="stylesheet" href="./css/styles-tablet.css" />
+    <link rel="stylesheet" href="./css/styles-desktop.css" />
   </head>
   <body>
     <header class="page-header">
@@ -51,6 +53,88 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="mobile-menu-btn btn" data-mobile-menu-open>
+          <svg class="menu-hamburger-icon">
+            <use href="/images/sprite.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-mobile-menu>
+        <div class="conteiner">
+          <div class="mobile-menu-thumb">
+            <button
+              class="mobile-menu-close-btn btn"
+              data-mobile-menu-close
+              type="button"
+            >
+              <svg class="mobile-menu-close-icon">
+                <use href="./images/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="mobile-menu-nav list">
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link current link" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mobile-menu-thumb">
+            <ul class="mobile-menu-contacts-list list">
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-tel-link link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a
+                  class="mobile-menu-email-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-menu-soc-list list">
+              <li class="mobile-menu-soc-item">
+                <a href="" class="mobile-menu-soc-link">
+                  <svg class="mobile-menu-soc-logo">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-soc-item">
+                <a href="" class="mobile-menu-soc-link">
+                  <svg class="mobile-menu-soc-logo">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-soc-item">
+                <a href="" class="mobile-menu-soc-link">
+                  <svg class="mobile-menu-soc-logo">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-soc-item">
+                <a href="" class="mobile-menu-soc-link">
+                  <svg class="mobile-menu-soc-logo">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -127,24 +211,30 @@
               <img
                 src="./images/frontend.jpg"
                 alt="Frontend"
-                width="360"
-                height="300"
+                srcset="
+                  ./images/frontend.jpg        1x,
+                  ./images/frontend@2x-min.jpg 2x
+                "
               />
             </li>
             <li class="about-item">
               <img
                 src="./images/optimization.jpg"
                 alt="optimization"
-                width="360"
-                height="300"
+                srcset="
+                  ./images/optimization.jpg        1x,
+                  ./images/optimization@2x-min.jpg 2x
+                "
               />
             </li>
             <li class="about-item">
               <img
                 src="./images/mobile-app.jpg"
                 alt="mobile-app"
-                width="360"
-                height="300"
+                srcset="
+                  ./images/mobile-app.jpg        1x,
+                  ./images/mobile-app@2x-min.jpg 2x
+                "
               />
             </li>
           </ul>
@@ -159,8 +249,10 @@
               <img
                 src="./images/our-team/guerrero.jpg"
                 alt="product designer photo"
-                width="264"
-                height="260"
+                srcset="
+                  ./images/our-team/guerrero.jpg        1x,
+                  ./images/our-team/guerrero@2x-min.jpg 2x
+                "
               />
               <div class="our-team-card-content">
                 <h3 class="headings">Mark Guerrero</h3>
@@ -201,8 +293,10 @@
               <img
                 src="./images/our-team/ford.jpg"
                 alt="frontend developer photo"
-                width="264"
-                height="260"
+                srcset="
+                  ./images/our-team/ford.jpg        1x,
+                  ./images/our-team/ford@2x-min.jpg 2x
+                "
               />
               <div class="our-team-card-content">
                 <h3 class="headings">Tom Ford</h3>
@@ -243,8 +337,10 @@
               <img
                 src="./images/our-team/garcia.jpg"
                 alt="marketing photo"
-                width="264"
-                height="260"
+                srcset="
+                  ./images/our-team/garcia.jpg        1x,
+                  ./images/our-team/garcia@2x-min.jpg 2x
+                "
               />
               <div class="our-team-card-content">
                 <h3 class="headings">Camila Garcia</h3>
@@ -285,8 +381,10 @@
               <img
                 src="./images/our-team/wilson.jpg"
                 alt="UI designer photo"
-                width="264"
-                height="260"
+                srcset="
+                  ./images/our-team/wilson.jpg        1x,
+                  ./images/our-team/wilson@2x-min.jpg 2x
+                "
               />
               <div class="our-team-card-content">
                 <h3 class="headings">Daniel Wilson</h3>
@@ -379,7 +477,7 @@
     </main>
 
     <footer class="footer">
-      <div class="footer-conteiner">
+      <div class="conteiner">
         <div class="footer-logo-conteiner">
           <a class="footer-logo link" href="./index.html"
             ><span class="logo-secondary-color">Web</span>Studio</a
@@ -527,6 +625,7 @@
       </div>
     </div>
 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
